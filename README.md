@@ -23,6 +23,13 @@
 4. install dependencies and run the server
    ```sh
    npm install
-   node app.js
+   npm run start
    ```
    This will make the server run at `http://localhost:8000/`
+
+## Note: 
+1. Either make an env file for all process.env variables or hardcode the value of those variables in /src/index.js , /src/db/mongoose.js , /src/emails/account.js , /src/middleware/auth.js and /src/models/user.js.
+2. If you have made an env file, do download env-cmd as a dev dependency and then after providing path for the env file in scripts, run
+   ```sh
+   npm run dev
+   ```
